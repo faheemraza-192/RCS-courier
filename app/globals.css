@@ -1,0 +1,317 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.header{
+  background-color: #2f2b36;
+  padding: 11px 7px;
+}
+.navbarContent{
+  display: flex;
+  align-items: center;
+  text-align-last: center;
+  /* padding: 10px; */
+}
+.imgBanner{
+  width: 18vh;
+  height: 10vh;
+}
+.nav-links{
+  display: flex;
+  justify-content: space-evenly;
+}
+.nav-links a{
+  color: black;
+  border-radius: 22px;
+  border: 1px solid black;
+  padding: 8px 16px;
+  background-color: #ffbe6e;
+  font-weight: 400;
+
+}
+.navbarBanner{
+  justify-items: center;
+}
+.navbarQuoteBtn a{
+color: black;
+  border-radius: 22px;
+  border: 1px solid black;
+  padding: 8px 16px;
+  background-color: #ffbe6e;
+  font-weight: 400;
+  margin-right: 26px;
+}
+.navbarQuoteBtn{
+  text-align-last:end ;
+}
+  .firstContent{
+  background-image: linear-gradient(
+    rgba(0, 0, 0, 0.5),   /* dark overlay, adjust alpha */
+    rgba(0, 0, 0, 0.5)
+  ),url("/images/bgimg1.avif");
+  height: auto;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 0px;
+}
+
+.startup{
+  width: max-content;
+  text-align-last: center;
+  height: -webkit-fill-available;
+  padding: 0px 0px;
+ 
+}
+.headingODGH h2{
+  font-size: 21vh;
+  color: white;
+  
+}
+.headingSolution h3{
+  font-size: 21vh;
+  color: #ffbe6e;
+  font-style: italic;
+}
+.inGoodHands p{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: white;
+  font-size: 20px;
+  font-weight: 400;
+}
+/* .columnscontent{
+  display: inline-flex;
+  color: white;
+  background-color: #7d7d7d; 
+} */
+.columnscontent {
+  position: relative;
+  display: inline-flex;
+  color: white;
+  z-index: 1; /* text stays above overlay */
+}
+
+.columnscontent::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #605b5b; /* dark overlay */
+  opacity: 0.4; /* change from 0.1 to 0.3 for stronger dark */
+  z-index: -1; /* behind the text */
+}
+
+.columnsPercent{
+  display: grid;
+  text-align-last: start;
+  padding: 15px;
+  
+}
+.colPr-num{
+  font-size: 44px;
+  font-weight: 600;
+}
+.colPr-text{
+  font-size: 16px;
+
+}
+.getQuotefirBtn{
+  border-radius: 18px;
+  border: 1px solid;
+  padding: 6px 14px;
+  color: white;
+  background-color: #757575; 
+  
+}
+/* section 1 complete */
+
+
+
+
+
+.successSection{
+  padding: 20vh 5px 20vh 20px;
+  margin: 0px;
+
+}
+.startcenter{
+  align-items: center;
+  /* background-color: aqua; */
+  width: auto;
+  margin: 0px;
+  padding-left: 25px;
+}
+.successHeading{
+  font-size: 49px;
+  font-weight: 400;
+}
+.successHeading span{
+  font-style: italic;
+  color: rgb(168, 93, 0);
+  
+}
+.successText{
+  color: rgb(101, 101, 101);
+  font-weight: 400;
+
+}
+
+
+/* plane Image */
+.planeSECTION{
+  width: 99%;
+}
+.planeImg{
+  border-radius: 10px;
+  /* width: 99%; */
+}
+
+
+/*Content */
+
+
+.serviceConText{
+  text-align: center;
+}
+.serviceConText h1{
+  font-weight: 400;
+  font-size: 48px;
+}
+
+.reliableWord{
+  color: rgb(168, 93, 0);
+  font-style: italic;
+}
+
+
+/* ////////
+////////
+//////// */
+ /* c a r    s e c t i o n  */
+
+ /* car section */
+
+.images {
+  width: 100%;
+  border: none;
+}
+
+.images img {
+  width: 100%;
+  height: 53vh;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.img{
+  /* height: 80vh; */
+}
+
+
+.carcards {
+  cursor: pointer;
+  width: 100%;
+  border: none;
+}
+
+.card-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-title h5 {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0;
+}
+
+
+.card-text p {
+  margin: 0;
+  font-size: 15px;
+  color: #7a7a7a;
+  /* font-weight: 500; */
+}
+
+.kmhour {
+  font-size: 12px;
+  font-weight: 800;
+  color: #7a7a7a;
+  margin-top: 10px;
+}
+
+.card-text p:nth-child(3),
+.card-text p:nth-child(4) {
+  font-size: 12px;
+  /* font-weight: 600; */
+  color: #7a7a7a;
+  margin-top: 10px;
+}
+
+.carcards:hover{
+  transform: translateY(-10px);
+  transition: transform 0.4s ease-in-out;
+  
+}
+/* transform: scale(1.1); */
+/* Mobile horizontal scroll (optional) */
+@media (max-width: 1190px) {
+  .row {
+    overflow-x: auto;
+    flex-wrap: nowrap;
+  }
+
+  .row > div {
+    min-width: 270px;
+  }
+}
+
+
+/* ////////
+////////
+//////// */
+.expServiceDiv{
+  /* background-color: aqua;
+  border-radius: 10px; */
+  margin-top: 10vh;
+  text-align: center;
+}
+.expService{
+  color: white;
+  background-color: rgb(168, 93, 0);
+  border-radius: 23px;
+  padding: 8px 13px;
+  font-size: 17px;
+  
+}
+.expService:hover{
+  background-color: rgb(31, 31, 31);
+}
