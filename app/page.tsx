@@ -5,7 +5,7 @@ import Header from "./components/Header";
 export default function Home() {
   return (
     <div className="" style={{}}>
-<h2>helo update verison</h2>
+
       <Header />
       <section className="firstContent">
         <div className="startup container-fluid">
