@@ -13,31 +13,31 @@ export default function Home() {
           <div className="headingSolution"><h3>Solutions</h3></div>
           <div className="inGoodHands"><p>Keep your Supply Chian AND storage in Good Hands</p></div>
           <div className="mb-4"><a href=""><button className="getQuotefirBtn">Get a Quote</button></a></div>
-          <div className="columnscontent col-12 ">
+          <div className="columnscontent col-12 row mx-auto ">
 
             {/* 1 */}
-            <div className="col border">
+            <div className="col-12 col-sm-6 col-md-6 col-lg-3 border">
               <div className="columnsPercent">
                 <span className="colPr-num">20</span>
                 <span className="colPr-text">years of Industry Expertise</span>
               </div>
             </div>
             {/* 2 */}
-            <div className="col border">
+            <div className="col-12 col-sm-6 col-md-6 col-lg-3 border">
               <div className="columnsPercent">
                 <span className="colPr-num">80%</span>
                 <span className="colPr-text">Automated Processes of Orders</span>
               </div>
             </div>
             {/* 3 */}
-            <div className="col border">
+            <div className="col-12 col-sm-6 col-md-6 col-lg-3 border">
               <div className="columnsPercent">
                 <span className="colPr-num">50+</span>
                 <span className="colPr-text">Global Networks of Partners</span>
               </div>
             </div>
             {/* 4 */}
-            <div className="col border">
+            <div className="col-12 col-sm-6 col-md-6 col-lg-3 border">
               <div className="columnsPercent">
                 <span className="colPr-num">100%</span>
                 <span className="colPr-text">Real Time Tracking of Shipments</span>
@@ -51,10 +51,10 @@ export default function Home() {
       {/* Section 2 */}
       <section className="successSection" style={{ width: "99%" }}>
         <div className="startcenter row ">
-          <div className="col-7 ">
+          <div className="col-12 col-sm-12 col-md-7 col-lg-7">
             <h2 className="successHeading">Your <span>Success</span> is Our Priority: Delivering Excellence Every Mile</h2>
           </div>
-          <div className="successText col-4 mx-auto"><p> This is the space to introduce visitors to the business or brand. Briefly explain who's behind it, what it does and what makes it unique. Share its core values and what this site has to offer.</p></div>
+          <div className="successText col-12 col-sm-12 col-md-4 col-lg-4 mx-auto"><p> This is the space to introduce visitors to the business or brand. Briefly explain who's behind it, what it does and what makes it unique. Share its core values and what this site has to offer.</p></div>
 
         </div>
       </section>
@@ -159,16 +159,60 @@ export default function Home() {
 
       {/* section  where we operate..... */}
       <section>
-        <div className="col-11 mx-auto">
-          <h1 style={{fontSize:"44px"}}>Where We <span style={{color:"rgb(168, 93, 0)",fontStyle:"italic"}}>Operate</span></h1>
-          <p style={{fontSize:"14px",color:"#7a7a7a"}}>Nationwide spread of warehouses</p>
+        <div className="col-11 mx-auto mt-5 pl-2">
+          <h1 style={{ fontSize: "44px" }}>Where We <span style={{ color: "rgb(168, 93, 0)", fontStyle: "italic" }}>Operate</span></h1>
+          <p style={{ fontSize: "14px", color: "#7a7a7a" }}>Nationwide spread of warehouses</p>
         </div>
-        <div className="container-fluid border">
-          
+        <div className=" border">
+          <div className="row g-3 col-11 mx-auto">
+            <div className="weOperate col-12 col-sm-12 col-md-5 col-lg-5 "><img style={{ height: "55vh", width: "-webkit-fill-available", borderRadius: "12px" }} src="images/op1.jpg" alt="" /></div>
+            <div className="weOperate col-12 col-sm-12 col-md-7 col-lg-7"><img style={{ height: "55vh", width: "-webkit-fill-available", borderRadius: "12px" }} src="images/op2.jpg" alt="" /></div>
+            <div className="weOperate col-12 col-sm-12 col-md-12 col-lg-7"><img style={{ height: "55vh", width: "-webkit-fill-available", borderRadius: "12px" }} src="images/op3.webp" alt="" /></div>
+            <div className="weOperate col-12 col-sm-12 col-md-12 col-lg-5"><img style={{ height: "55vh", width: "-webkit-fill-available", borderRadius: "12px" }} src="images/op4.webp" alt="" /></div>
+          </div>
         </div>
       </section>
       {/* /////////////////////// */}
-      {/* ////////////////////// */}
+
+      {/* footer */}
+      <section className="mt-5 pt-5 pb-5">
+  <div className="pt-5 pb-5" style={{ backgroundColor: "#2f2b36", color: "white",borderRadius:"15px" }}>
+    <div className="pt-5 pb-5">
+      <div className="mb-5 pb-5" style={{ textAlign: "center" }}>
+        <h2>
+          Our Trusted{" "}
+          <span style={{ color: "rgb(168, 93, 0)", fontStyle: "italic" }}>
+            Partners
+          </span>
+        </h2>
+      </div>
+
+      {/* 👇 scroll wrapper */}
+      <div className="partnerScrollWrapper pb-3">
+        <div className="partnerRow">
+          <div className="partnerCol">
+            <img className="partnerImg" src="images/partner1.avif" alt="" />
+          </div>
+          <div className="partnerCol">
+            <img className="partnerImg" style={{objectFit:"cover"}} src="images/partner2.avif" alt="" />
+          </div>
+          <div className="partnerCol">
+            <img className="partnerImg"  src="images/partner3.avif" alt="" />
+          </div>
+          <div className="partnerCol">
+            <img className="partnerImg" src="images/partner4.avif" alt="" />
+          </div>
+          <div className="partnerCol">
+            <img className="partnerImg" src="images/partner5.avif" alt="" />
+          </div>
+        </div>
+      </div>
     </div>
+  </div>
+</section>
+
+    <h2></h2>
+    </div>
+    
   );
 }
