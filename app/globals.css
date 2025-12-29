@@ -344,6 +344,7 @@ color: black;
 /* Desktop default (NO SCROLL) */
 .partnerScrollWrapper {
   overflow: visible;
+  margin-right: 13px;
 }
 
 .partnerRow {
@@ -378,3 +379,107 @@ color: black;
   scrollbar-width: none;
 }
 
+
+
+
+
+
+
+/* /////////// */
+.header {
+  background-color: #2e212e;
+  position: relative;
+  padding: 15px 30px;
+}
+
+/* Navbar layout */
+.navbarContent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+/* Desktop nav buttons */
+.nav-links button,
+.navbarQuoteBtn button {
+  background: transparent;
+  color: white;
+  border: none;
+  margin: 0 10px;
+  cursor: pointer;
+  font-size: 14px;
+  padding: 6px 12px;
+  border-radius: 4px;
+}
+
+/* Logo */
+.navbarBanner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+
+.navbarBanner img {
+  max-height: 50px;
+}
+
+/* Hamburger icon */
+.hamburger {
+  cursor: pointer;
+  z-index: 1001;
+  position: relative;
+}
+
+.hamburger span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background: white;
+  margin: 5px 0;
+  transition: 0.3s;
+}
+
+/* Mobile side menu (off-canvas) */
+.mobileMenu {
+  position: fixed;
+  top: 0;
+  right: -50%; /* hidden by default */
+  width: 50%; /* cover half of screen */
+  height: 100%;
+  background-color: #2e212e;
+  display: flex;
+  flex-direction: column;
+  padding: 60px 20px;
+  transition: right 0.3s ease-in-out;
+  z-index: 1000;
+}
+
+.mobileMenu a {
+  padding: 15px 0;
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  border-bottom: 1px solid #444;
+}
+
+.mobileMenu a:hover {
+  background-color: #444;
+}
+
+/* Open menu */
+.mobileMenu.open {
+  right: 0;
+}
+
+/* Overlay */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.4);
+  z-index: 999;
+}

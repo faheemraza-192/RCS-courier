@@ -2,6 +2,9 @@ import Image from "next/image";
 import Link from "next/link";
 import styles from "./page.module.css";
 import Header from "./components/Header";
+
+// import { useState } from "react";
+
 export default function Home() {
   return (
     <div className="" style={{}}>
@@ -163,7 +166,7 @@ export default function Home() {
           <h1 style={{ fontSize: "44px" }}>Where We <span style={{ color: "rgb(168, 93, 0)", fontStyle: "italic" }}>Operate</span></h1>
           <p style={{ fontSize: "14px", color: "#7a7a7a" }}>Nationwide spread of warehouses</p>
         </div>
-        <div className=" border">
+        <div className="">
           <div className="row g-3 col-11 mx-auto">
             <div className="weOperate col-12 col-sm-12 col-md-5 col-lg-5 "><img style={{ height: "55vh", width: "-webkit-fill-available", borderRadius: "12px" }} src="images/op1.jpg" alt="" /></div>
             <div className="weOperate col-12 col-sm-12 col-md-7 col-lg-7"><img style={{ height: "55vh", width: "-webkit-fill-available", borderRadius: "12px" }} src="images/op2.jpg" alt="" /></div>
@@ -211,7 +214,34 @@ export default function Home() {
   </div>
 </section>
 
-    <h2></h2>
+
+<section>
+  <div className="row">
+    <div className="col-6 mx-auto border">
+      <h3 className="mt-5" style={{textAlign:"center"}}>Get a Quote Today</h3>
+      <form className="form-control" action="" style={{}}>
+     <table className="mx-auto">
+       <tr>
+         <th>First Name</th>
+         <th>Last Name</th>
+       </tr>
+       <tr>
+         <td><input type="text"  placeholder="enter first name"/></td>
+         <td><input type="text"  placeholder="enter last name"/></td>
+       </tr>
+       <tr>
+         <th>Phone</th>
+         <th>Address</th>
+       </tr>
+       <tr>
+         <td><input type="number"  placeholder="enter phone"/></td>
+         <td><input type="text"  placeholder="enter address"/></td>
+       </tr>
+     </table>
+      </form></div>
+    <div className="col-6 p-0"><video src="videos/video1.mp4"></video></div>
+  </div>
+</section>
     </div>
     
   );
