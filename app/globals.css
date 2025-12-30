@@ -42,13 +42,14 @@ body {
 }
 .nav-links{
   display: flex;
+  gap: 8px;
   justify-content: space-evenly;
 }
 .nav-links a{
   color: black;
   border-radius: 22px;
   border: 1px solid black;
-  padding: 8px 16px;
+  padding: 8px 10px;
   background-color: #ffbe6e;
   font-weight: 400;
 
@@ -60,7 +61,7 @@ body {
 color: black;
   border-radius: 22px;
   border: 1px solid black;
-  padding: 8px 16px;
+  padding: 14px 10px;
   background-color: #ffbe6e;
   font-weight: 400;
   margin-right: 26px;
@@ -85,7 +86,7 @@ color: black;
   text-align-last: center;
   height: -webkit-fill-available;
   padding: 0px 0px;
- 
+  
 }
 .headingODGH h2{
   font-size: 21vh;
@@ -96,6 +97,74 @@ color: black;
   font-size: 21vh;
   color: #ffbe6e;
   font-style: italic;
+}
+@media (max-width: 1280px){
+  .headingODGH h2{
+    font-size: 19vh;
+  }
+  .headingSolution h3{
+    font-size: 19vh;
+  }
+}
+@media (max-width: 1161px){
+  .headingODGH h2{
+    font-size: 17vh;
+  }
+  .headingSolution h3{
+    font-size: 17vh;
+  }
+}
+@media (max-width: 1041px){
+  .headingODGH h2{
+    font-size: 14vh;
+  }
+  .headingSolution h3{
+    font-size: 14vh;
+  }
+}
+@media (max-width: 861px){
+  .headingODGH h2{
+    font-size: 12vh;
+  }
+  .headingSolution h3{
+    font-size: 12vh;
+  }
+}
+@media (max-width: 766px){
+  .headingODGH h2{
+    font-size: 11vh;
+  }
+  .headingSolution h3{
+    font-size: 11vh;
+  }
+  
+}
+@media (max-width: 683px){
+  .headingODGH h2{
+    font-size: 8vh;
+  }
+  .headingSolution h3{
+    font-size: 8vh;
+  }
+}
+@media (max-width: 504px){
+  .headingODGH h2{
+    font-size: 6vh;
+  }
+  .headingSolution h3{
+    font-size: 6vh;
+  }
+}
+@media (max-width: 395px){
+  .headingODGH h2{
+    font-size: 5vh;
+  }
+  .headingSolution h3{
+    font-size: 5vh;
+  }
+  .getquotebtnn{
+    padding:9px 0px ;
+  }
 }
 .inGoodHands p{
   margin-top: 20px;
@@ -482,4 +551,37 @@ color: black;
   height: 100%;
   background: rgba(0,0,0,0.4);
   z-index: 999;
+}
+
+
+.inputfield{
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 8px;
+  width: -webkit-fill-available;
+  background-color: white;
+  border: 2px solid #2f2b36;
+  margin-top: 8px;
+}
+
+.sendBtn{
+  border: 1px solid black;
+  padding: 8px;
+  border-radius: 20px;
+  margin: 5px;
+  width: -webkit-fill-available;
+  background-color: #2f2b36;
+  color: white;
+}
+
+.sendBtn:hover{
+  background-color: transparent;
+  color: black;
+  border: 2px solid #2f2b36;
+  
+}
+
+.video{
+  border-radius: 20px;
+  object-fit: cover;
 }

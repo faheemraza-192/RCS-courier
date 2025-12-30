@@ -178,71 +178,106 @@ export default function Home() {
       {/* /////////////////////// */}
 
       {/* footer */}
-      <section className="mt-5 pt-5 pb-5">
-  <div className="pt-5 pb-5" style={{ backgroundColor: "#2f2b36", color: "white",borderRadius:"15px" }}>
-    <div className="pt-5 pb-5">
-      <div className="mb-5 pb-5" style={{ textAlign: "center" }}>
-        <h2>
-          Our Trusted{" "}
-          <span style={{ color: "rgb(168, 93, 0)", fontStyle: "italic" }}>
-            Partners
-          </span>
-        </h2>
-      </div>
+      <section className="mt-5 pt-5 pb-5 ">
+        <div className="pt-5 pb-5 mx-auto" style={{ backgroundColor: "#2f2b36", color: "white", borderRadius: "15px", width: "99%" }}>
+          <div className="pt-5 pb-5">
+            <div className="mb-5 pb-5" style={{ textAlign: "center" }}>
+              <h2>
+                Our Trusted{" "}
+                <span style={{ color: "rgb(168, 93, 0)", fontStyle: "italic" }}>
+                  Partners
+                </span>
+              </h2>
+            </div>
 
-      {/* 👇 scroll wrapper */}
-      <div className="partnerScrollWrapper pb-3">
-        <div className="partnerRow">
-          <div className="partnerCol">
-            <img className="partnerImg" src="images/partner1.avif" alt="" />
-          </div>
-          <div className="partnerCol">
-            <img className="partnerImg" style={{objectFit:"cover"}} src="images/partner2.avif" alt="" />
-          </div>
-          <div className="partnerCol">
-            <img className="partnerImg"  src="images/partner3.avif" alt="" />
-          </div>
-          <div className="partnerCol">
-            <img className="partnerImg" src="images/partner4.avif" alt="" />
-          </div>
-          <div className="partnerCol">
-            <img className="partnerImg" src="images/partner5.avif" alt="" />
+            {/* 👇 scroll wrapper */}
+            <div className="partnerScrollWrapper pb-3">
+              <div className="partnerRow">
+                <div className="partnerCol">
+                  <img className="partnerImg" src="images/partner1.avif" alt="" />
+                </div>
+                <div className="partnerCol">
+                  <img className="partnerImg" style={{ objectFit: "cover" }} src="images/partner2.avif" alt="" />
+                </div>
+                <div className="partnerCol">
+                  <img className="partnerImg" src="images/partner3.avif" alt="" />
+                </div>
+                <div className="partnerCol">
+                  <img className="partnerImg" src="images/partner4.avif" alt="" />
+                </div>
+                <div className="partnerCol">
+                  <img className="partnerImg" src="images/partner5.avif" alt="" />
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
-  </div>
-</section>
+      </section>
 
 
-<section>
-  <div className="row">
-    <div className="col-6 mx-auto border">
-      <h3 className="mt-5" style={{textAlign:"center"}}>Get a Quote Today</h3>
-      <form className="form-control" action="" style={{}}>
-     <table className="mx-auto">
-       <tr>
-         <th>First Name</th>
-         <th>Last Name</th>
-       </tr>
-       <tr>
-         <td><input type="text"  placeholder="enter first name"/></td>
-         <td><input type="text"  placeholder="enter last name"/></td>
-       </tr>
-       <tr>
-         <th>Phone</th>
-         <th>Address</th>
-       </tr>
-       <tr>
-         <td><input type="number"  placeholder="enter phone"/></td>
-         <td><input type="text"  placeholder="enter address"/></td>
-       </tr>
-     </table>
-      </form></div>
-    <div className="col-6 p-0"><video src="videos/video1.mp4"></video></div>
-  </div>
-</section>
+      <section>
+        <div className="row mx-auto" style={{borderRadius: "17px 32px 32px 17px", width: "98%",backgroundColor:"#ffbe6e" }}>
+          <div className="col-12 col-sm-12 col-md-12 col-lg-6 mx-auto" style={{}}>
+            <h3 className="mt-5" style={{ textAlign: "center" }}>Get A Quote Today</h3>
+
+          
+            <div className="col-10 mx-auto">
+            <form className="  ">
+              <div style={{ display: "flex", gap: "16px" }}>
+                
+                <div className="mt-3"  style={{ width: "100%" }}>
+                  <label className=" ">
+                    First Name*
+                  </label>
+                  <div>
+                    <input className="inputfield" type="text" placeholder="Enter First Name" />
+                  </div>
+                </div>
+
+                
+                <div className="mt-3"  style={{ width: "100%" }}>
+                  <label className=" ">
+                    Last Name*
+                  </label>
+                  <div>
+                    <input className="inputfield" type="text" placeholder="Enter Last Name" />
+                  </div>
+                </div>
+              </div>
+              <div style={{ display: "flex", gap: "16px" }}>
+              
+                <div className="mt-3"  style={{ width: "100%" }}>
+                  <label className=" ">
+                    Phone*
+                  </label>
+                  <div>
+                    <input className="inputfield" type="number" placeholder="Enter Phone Number" />
+                  </div>
+                </div>
+               
+                <div className="mt-3" style={{ width: "100%" }}>
+                  <label className=" ">
+                    Address
+                  </label>
+                  <div>
+                    <input className="inputfield" type="text" placeholder="Enter Address" />
+                  </div>
+                </div>
+              </div>
+              <div className="mt-3 mb-4">
+                <button className="sendBtn">Send</button>
+              </div>
+
+            </form>
+            </div>
+
+          </div>
+          <div className="col-12 col-sm-12 col-md-12 col-lg-6  p-0"  >
+            <video className="video" style={{height:"100%"}} autoPlay loop muted playsInline src="/videos/video1.mp4"></video>
+          </div>
+        </div>
+      </section>
     </div>
-    
+
   );
 }

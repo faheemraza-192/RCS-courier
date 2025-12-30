@@ -27,20 +27,20 @@ export default function Header() {
         </div>
 
         {/* Left nav links (desktop only) */}
-        <div className="nav-links d-none d-lg-flex">
+        <div className="nav-links d-none d-lg-flex col-4">
           <a href=""><button>Services</button></a>
           <a href=""><button>About Us</button></a>
           <a href=""><button>Contact Us</button></a>
         </div>
 
         {/* Center logo */}
-        <div className="navbarBanner">
+        <div className="navbarBanner col-4">
           <img className="imgBanner" src="images/rapidimg.png" alt="Logo" />
         </div>
 
         {/* Right button (always visible) */}
-        <div className="navbarQuoteBtn">
-          <a href=""><button>GET A QUOTE</button></a>
+        <div className="navbarQuoteBtn col-4">
+          <a href=""><button className='getquotebtnn'>GET A QUOTE</button></a>
         </div>
       </div>
 
